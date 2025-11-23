@@ -2,6 +2,7 @@
 
 # Date:
 # Register no.212222060007
+
 Aim:
 Development of Python Code Compatible with Multiple AI Tools
 
@@ -18,22 +19,27 @@ To analyze performance or response quality and extract actionable insights.
 To demonstrate a unified interface for AI benchmarking and decision support.
 
 Algorithm
-
 API Setup: Configure authentication for each AI service (store API keys securely).
+
 Prompt Input: Define a set of prompts or tasks to test.
 
 a) API Request Loop:
+
 b) For each AI tool, send the same prompt.
+
 c) Collect responses.
 
 Output Normalization: Preprocess or clean outputs for consistency.
 a) Comparison Logic:
-Use semantic similarity, token length, keyword match, or sentiment analysis.
-b) Insight Generation:
-Rank responses or summarize strengths and weaknesses.
 
+Use semantic similarity, token length, keyword match, or sentiment analysis.
+
+b) Insight Generation:
+
+Rank responses or summarize strengths and weaknesses.
 Reporting:
 Output comparison report in CSV or Markdown.
+
 Optionally use visualization (matplotlib/seaborn).
 
 Required Libraries
@@ -45,13 +51,15 @@ Cohere: Sign up at https://dashboard.cohere.ai/ → generate API key.
 Anthropic (Claude): Apply for access at https://www.anthropic.com/ and get API key.
 
 Hugging Face: Get token from https://huggingface.co/settings/tokens.
+
 Store these API keys in a .env file for security.
+
 Step-by-Step Python Code a) Environment Setup (.env)
 OPENAI_API_KEY=your_openai_key
 COHERE_API_KEY=your_cohere_key
 ANTHROPIC_API_KEY=your_anthropic_key
-
 b) Python Script
+
 import os
 import openai
 import cohere
